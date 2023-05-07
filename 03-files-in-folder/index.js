@@ -13,7 +13,7 @@ const readDirectory = async () => {
       const statFile = await fsPromise.stat(path.join(__dirname,'secret-folder',file.name));
       const weightFile = statFile.size;
       
-      stdout.write(`${fileName} - ${extensionName} - ${weightFile}\n`);
+      stdout.write(`${fileName} - ${extensionName} - ${weightFile} Kb\n`);
     }
   }
   
